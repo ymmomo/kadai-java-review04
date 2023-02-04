@@ -9,7 +9,7 @@ public class Review01 {
 
         price = 1500;
 
-        tax = calculateTax(price);
+        tax = tax(price);
 
         priceIncludedtax = price + tax;
 
@@ -17,7 +17,7 @@ public class Review01 {
     }
 
     //消費税額を計算するメソッド
-    public static int calculateTax(int price) {
+    public static int tax(int price) {
 
         //消費税額の計算
         double tax= price * 0.1;
